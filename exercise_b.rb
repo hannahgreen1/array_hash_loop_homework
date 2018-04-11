@@ -56,3 +56,15 @@ users = {
 
 p users ["Jonathan"][:twitter]
 p users ["Erik"][:home_town]
+p users ["Erik"][:lottery_numbers]
+p users ["Avril"][:pets][0][:species]
+p users ["Erik"][:lottery_numbers][2]
+
+# users ["Avril"][:lottery_numbers]
+p users ["Erik"][:lottery_numbers].push[7]
+p users ["Erik"][:home_town] = "Edinburgh"
+p users ["Erik"][:pets].push(
+  :name => "Fluffy",
+  :species => "dog"
+)
+p users["Hannah"] = "student"
