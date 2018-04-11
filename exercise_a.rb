@@ -12,3 +12,6 @@ p stops.reverse
 for stop in stops
   p stops
 end
+# ways to return array items
+stops[2]
+stops.fetch[2]
