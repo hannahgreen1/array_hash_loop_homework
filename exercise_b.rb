@@ -59,8 +59,17 @@ p users ["Erik"][:home_town]
 p users ["Erik"][:lottery_numbers]
 p users ["Avril"][:pets][0][:species]
 p users ["Erik"][:lottery_numbers][2]
-
-# users ["Avril"][:lottery_numbers]
+avrilsArray = [12, 14, 33, 38, 9, 25]
+def even_array(array)
+  lottery_array = []
+for numbers in array
+  if numbers%2 == 0
+    lottery_array.push(numbers)
+  end
+end
+return lottery_array
+end
+p even_array(avrilsArray)
 p users ["Erik"][:lottery_numbers].push[7]
 p users ["Erik"][:home_town] = "Edinburgh"
 p users ["Erik"][:pets].push(
